@@ -1,3 +1,4 @@
+# this program calculates the total cost of bulk price, sales tax, shipping charge, and total price given the book price and number of books to be ordered
 from random import randint
 
 
@@ -6,6 +7,9 @@ def bernie():
     # num_books = int(input("Enter the quantity of books to be ordered: "))
     book_price = randint(15, 30)
     num_books = randint(133, 500)
+    print(f"Book Price: ${book_price:.2f}")
+    print(f"Number of Books: {num_books}")
+    print("------------------------------------")
 
     bulk_price = book_price * num_books
     print(f"Bulk Price: ${bulk_price:.2f}")
