@@ -10,13 +10,13 @@ def get_total_price(num_coals, num_carrots, num_hats):
 
 
 def read_customer_data(file_name):
-    customers = []
-    coals = []
-    carrots = []
-    hats = []
+    customers: list[str] = []
+    coals: list[int] = []
+    carrots: list[int] = []
+    hats: list[int] = []
     with open(file_name, "r") as file:
         for line in file:
-            data = line.strip().split()
+            data: list[str] = line.strip().split()
             customers.append(data[0])
             coals.append(int(data[1]))
             carrots.append(int(data[2]))
