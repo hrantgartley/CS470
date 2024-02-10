@@ -41,4 +41,5 @@ def visualize_classifier(classifier, X, y):
     plt.xticks((np.arange(int(X[:, 0].min() - 1), int(X[:, 0].max() + 1), 1.0)))
     plt.yticks((np.arange(int(X[:, 1].min() - 1), int(X[:, 1].max() + 1), 1.0)))
 
+    plt.title("HS GPA and Math ACT")
     plt.show()
