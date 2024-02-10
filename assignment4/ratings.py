@@ -52,8 +52,8 @@ def sort_ratings(names, ratings):
 
 def main():
     filename = "./ratings-1.csv"
-    names, ratings = read_ratings(filename)
-    names_sorted, ratings_sorted = sort_ratings(names, ratings)
+    professor_names, professor_ratings = read_ratings(filename)
+    names_sorted, ratings_sorted = sort_ratings(professor_names, professor_ratings)
     plot_ratings(names_sorted, ratings_sorted)
 
 
