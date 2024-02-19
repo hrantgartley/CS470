@@ -30,6 +30,8 @@ def get_valid_int_input(prompt):
                 print("Please enter a non-negative integer.")
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
+        finally:
+            raise ValueError("Invalid input. Please enter a valid integer.")
 
 
 # calculates the bulk price of the order
